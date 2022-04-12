@@ -1,10 +1,24 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Product</router-link> |
+    <router-link to="/point">Redeemproduct</router-link>
   </nav>
   <router-view />
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isAdmin: false,
+    };
+  },
+  mounted() {
+    console.log("aaaaaa");
+    // if (localStorage.get("isAdmin")) this.isAdmin = true;
+  },
+};
+</script>
 
 <style>
 #app {
