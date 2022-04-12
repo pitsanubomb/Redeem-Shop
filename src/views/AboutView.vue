@@ -1,6 +1,6 @@
 <template>
   <div class="point">
-    <ProductList productType="cash" />
+    <ProductList productType="point" />
   </div>
 </template>
 
